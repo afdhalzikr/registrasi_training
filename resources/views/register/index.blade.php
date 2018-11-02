@@ -14,7 +14,7 @@
                 </div>
               </div>
             </div>
-            <div class="row packages">
+            <div class="row packages justify-content-center">
               <div class="col-md-4">
                 <div class="package">
                   <div class="package-header light-gray">
@@ -24,6 +24,7 @@
                   </ul><a href="#" class="btn btn-template-outlined" >Coming Soon</a>
                 </div>
               </div>
+
               <div class="col-md-4">
                 <div class="best-value">
                   <div class="package">
@@ -40,10 +41,11 @@
                       <li><i class="fa fa-check"></i>Basic of Python</li>
                       <li><i class="fa fa-check"></i>Basic of PHP</li>
                       <li><i class="fa fa-check"></i>Basic of Javascript</li>
-                    </ul><a href="/daftar" class="btn btn-template-outlined">Daftar</a>
+                    </ul><a href="{!! route('daftar') !!}" class="btn btn-template-outlined">Daftar</a>
                   </div>
                 </div>
               </div>
+
               <div class="col-md-4">
                 <div class="package">
                   <div class="package-header light-gray">
@@ -57,4 +59,4 @@
           </section>
         </div>
       </div>
-          @endsection
+@endsection

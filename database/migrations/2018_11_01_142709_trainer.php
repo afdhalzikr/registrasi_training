@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePesertasTable extends Migration
+class Trainer extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,13 @@ class CreatePesertasTable extends Migration
      */
     public function up()
     {
-        Schema::create('peserta', function (Blueprint $table) {
+        Schema::create('trainer', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->string('nama', 30);
             $table->string('email')->unique();
             $table->string('no_hp', 13);
-            $table->string('username', 20)->nullable();            
+            $table->string('username', 20)->nullable();
             $table->string('password', 299)->nullable();
             $table->string('kartu_pengenal', 299)->nullable();
         });
@@ -32,6 +32,6 @@ class CreatePesertasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('peserta');
+        Schema::dropIfExists('trainer');
     }
 }
